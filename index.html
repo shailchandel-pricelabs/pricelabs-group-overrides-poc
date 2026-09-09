@@ -359,6 +359,11 @@
       </div>
     </div>
 
+    <div class="banner" id="warnBanner" hidden>
+      <span class="icon-circle">i</span>
+      <span>Showing every override for this account — <b id="warnCount">–</b>, no date filter applied.</span>
+    </div>
+
     <div class="toolbar">
       <div class="field">
         <label for="preset">Show overrides</label>
@@ -372,14 +377,9 @@
       </div>
       <div class="toolbar-actions">
         <button class="btn" id="uploadBtn" type="button">Upload CSV</button>
-        <button class="btn" id="downloadBtn" type="button">Download CSV</button>
+        <button class="btn" id="downloadBtn" type="button">Download loaded overrides (CSV)</button>
         <button class="btn btn-primary" id="downloadAllBtn" type="button">Download all (CSV)</button>
       </div>
-    </div>
-
-    <div class="banner" id="warnBanner" hidden>
-      <span class="icon-circle">i</span>
-      <span>Showing every override for this account — <b id="warnCount">–</b>, no date filter applied.</span>
     </div>
 
     <div class="table-scroll">
@@ -409,10 +409,10 @@
     <div class="pagination">
       <div class="pagination-left">
         <select id="pageSize" class="page-size-select">
-          <option value="25">Show 25 per page</option>
-          <option value="50">Show 50 per page</option>
-          <option value="100" selected>Show 100 per page</option>
-          <option value="500">Show 500 per page</option>
+          <option value="25">25 per page</option>
+          <option value="50">50 per page</option>
+          <option value="100" selected>100 per page</option>
+          <option value="500">500 per page</option>
         </select>
         <span class="page-info" id="pageInfo"></span>
       </div>
