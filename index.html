@@ -374,9 +374,9 @@
         <label for="preset">Show overrides</label>
         <select id="preset">
           <option value="recent100" selected>Most Recent 100 (by date created)</option>
-          <option value="1m">Starting within 1 month</option>
-          <option value="6m">Starting within 6 months</option>
-          <option value="1y">Starting within 1 year</option>
+          <option value="1m">Within 1 month</option>
+          <option value="6m">Within 6 months</option>
+          <option value="1y">Within 1 year</option>
           <option value="all">All overrides (every date)</option>
         </select>
       </div>
@@ -559,8 +559,8 @@
   var toastTimer = null;
 
   var presetLabels = {
-    recent100:'Most Recent 100', '1m':'Starting within 1 month', '6m':'Starting within 6 months',
-    '1y':'Starting within 1 year', all:'All overrides'
+    recent100:'Most Recent 100', '1m':'Within 1 month', '6m':'Within 6 months',
+    '1y':'Within 1 year', all:'All overrides'
   };
 
   function filteredRows(){
